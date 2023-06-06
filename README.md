@@ -200,3 +200,301 @@
 </main>
   </body>
 </html>
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+.main{
+  display:flex;
+}
+.nav-bar{
+  flex-basis:5%;
+}
+.albums{
+  flex-basis: 70%;
+  align-items: center;
+  width:100%;
+}
+@media(max-width: 700px){
+  .albums{
+    flex-basis:70%;
+    align-items: left;
+    width:70%;
+  }
+  .nav-bar{
+    flex-basis: 1.5%;
+  }
+}
+---nav-bar----
+#Albums #navbar header{
+  height:0px;
+  background:transparent;
+  padding-bottom:4px;
+  position:absolute;
+  box-shadow:none;
+  font-size:0px;
+}
+
+#Albums{
+  position:fixed;
+  margin-top:50px;
+  height:380;
+  width:225px;
+}
+#Albums header{
+  font-size:30px;
+  color:maroon;
+  background: linear-gradient( orange,lightblue, #edc9af);
+  width:225px;
+  font-weight:bold;
+  font-family:cursive;
+  border-radius:10px 30px 30px 10px;
+  padding:10px 0;
+  height:40px;
+  box-shadow:-20px 20px 20px 20px gold;
+}
+
+nav > ul>li{
+  color:transparent;
+  height: 66px;
+ 
+  }
+nav > ul > li>a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: maroon ;
+  display: block;
+  margin-right:20px;
+  transition: 0.5s;
+}
+nav > ul > li>a:hover::after{
+  width:75%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav>ul>li > a{
+  color:maroon;
+  margin-bottom:3px;
+  display:block;
+  font-size:19.5px;
+  width:225px;
+  margin:0 0 0px -40px;
+  text-decoration:none;
+  font-style:italic;
+  border-radius:5px 10px 10px 5px;
+  font-weight:bold;
+  padding:9 0;
+  box-shadow: 0 10px 20px 10px;
+  height: 55px;
+}
+li>a#j{
+  background: #edc9af url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Maroon_5_-_Jordi.png/220px-Maroon_5_-_Jordi.png) right no-repeat;
+  background-size:24%;
+}
+li>a#rpb{
+  background:ghostwhite url(https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Red_Pill_Blues_cover.png/220px-Red_Pill_Blues_cover.png) right no-repeat;
+  background-size:24%
+
+}
+li>a#v{
+  background:rgb(150, 100, 255) url(https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Maroon_5_-_V_%28Official_Album_Cover%29.png/220px-Maroon_5_-_V_%28Official_Album_Cover%29.png) right no-repeat;
+  background-size:24%;
+}
+li>a#o{
+  background: #b408b5 url(https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Maroon_5_-_Overexposed.png/220px-Maroon_5_-_Overexposed.png) right no-repeat;
+  background-size:24%;
+}
+li>a#h{
+  background: #faf0dd url(https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Maroon_5_-_Hands_All_Over.png/220px-Maroon_5_-_Hands_All_Over.png) right no-repeat;
+  background-size:24%;
+}
+li>a#i{
+  background: #565051 url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Maroon_5_-_It_Won%27t_Be_Soon_Before_Long.png/220px-Maroon_5_-_It_Won%27t_Be_Soon_Before_Long.png) right no-repeat;
+background-size:24%
+}
+li>a#s{
+  background: maroon url(https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Maroon_5_-_Songs_About_Jane.png/220px-Maroon_5_-_Songs_About_Jane.png) right no-repeat;
+  background-size:24%;
+  color:gold
+}
+li>a#s:last-of-type:after{
+  content:'';
+  height:2px;
+  background:gold;
+  margin-right: 20px;
+  transition: 0.5s;
+  width:0%;
+  display:block;
+}
+li>a#s:last-of-type:hover::after{
+  width:75%;
+}
+
+---main---
+
+.main-section .album-nd{
+  display:block;
+}
+
+.album-nd p{
+  color:maroon;
+  text-align:left;
+  border-radius:10px;
+  font-family:cursive;
+  font-size:18px;
+}
+
+.albums header{
+  border-radius:10px;
+  font-family:sans-serif;
+  width:60%;
+  height:80px;
+  padding-top:25px;
+}
+
+.album-nd{
+  font-size:25px;
+  margin-top:20px;
+  margin-left:260px;
+ padding:66px 0px 0px 0;
+ width:75%;
+ color:transparent;
+}
+
+.album-nd>ol>li{
+  text-decoration:none;
+  font-family:cursive;
+  text-align:left;
+  font-size:20px;
+border-radius:10px;
+color:maroon;
+}
+
+.album-nd>ol>li>a{
+  color:maroon;
+  text-decoration:none;
+  font-size:18px;
+  transition: 0.5s;
+}
+
+.album-nd>ol>li>a:hover{
+  color:black;
+}
+
+.album-nd {
+  width: 100%;
+}
+
+.album-nd header{
+  width:98.5%;
+  text-align: center;
+}
+
+#Songs_About_Jane header{
+  border:6px solid maroon;
+  background: maroon url(https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Maroon_5_-_Songs_About_Jane.png/220px-Maroon_5_-_Songs_About_Jane.png) center repeat;
+  background-size:12%;
+}
+
+#Songs_About_Jane p, #Songs_About_Jane >ol>li, #Songs_About_Jane >ol>li>a{
+  background-color:rgba(128,0,0,0.7);
+  color:gold;
+  border:6px solid maroon;
+}
+
+#Songs_About_Jane >ol>li>a:hover{
+  color:black;
+}
+
+.album-nd[id="It_Won't_Be_Soon_Before_Long"] header{
+border:6px solid #565051;
+background:#565051 url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Maroon_5_-_It_Won%27t_Be_Soon_Before_Long.png/220px-Maroon_5_-_It_Won%27t_Be_Soon_Before_Long.png) center repeat;
+background-size:12%;
+}
+
+.album-nd[id="It_Won't_Be_Soon_Before_Long"] p, .album-nd[id="It_Won't_Be_Soon_Before_Long"]>ol>li{
+  background-color:rgba(86, 80, 81, 0.7);
+  border:6px solid #565051;
+}
+
+#Hands_All_Over header{
+border:6px solid #faf0dd;
+background: #faf0dd url(https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Maroon_5_-_Hands_All_Over.png/220px-Maroon_5_-_Hands_All_Over.png) repeat center;
+background-size:12%;
+}
+
+#Hands_All_Over p, #Hands_All_Over >ol>li{
+background-color:rgba(250, 240, 221, 0.7);
+border:6px solid #faf0dd;
+}
+
+#Overexposed header{
+  border:6px solid #b408b5;
+  background: #b408b5 url(https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Maroon_5_-_Overexposed.png/220px-Maroon_5_-_Overexposed.png) center repeat;
+  background-size:12%;
+}
+
+#Overexposed p, #Overexposed>ol>li{
+  background-color:rgba(180, 8, 181, 0.7);
+  border: 6px solid #b408b5;
+}
+
+#V header{
+  font-family:Sans-Serif;
+  border:6px solid rgb(150, 100, 255);
+  background:rgb(150, 100, 255) url(https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Maroon_5_-_V_%28Official_Album_Cover%29.png/220px-Maroon_5_-_V_%28Official_Album_Cover%29.png) repeat center;
+  background-size:12%;
+}
+
+#V p, #V>ol>li{
+  background-color:rgba(150, 100, 255, 0.7);
+  border:6px solid rgb(150, 100, 255);
+}
+
+#Red_Pill_Blues p,#Red_Pill_Blues ol>li {
+  background-color:rgba(97.25%,97.25%,100%, 0.7);
+  border:6px solid ghostwhite;
+}
+
+#Red_Pill_Blues header{
+  border:6px solid ghostwhite;
+  background: ghostwhite url(https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Red_Pill_Blues_cover.png/220px-Red_Pill_Blues_cover.png) repeat center;
+  background-size:12%;
+}
+
+#JORDI ol>li, #JORDI p{
+  background-color:rgba(237, 201, 175, 0.7);
+  border:6px solid #edc9af;
+}
+
+#JORDI header{
+  background: url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Maroon_5_-_Jordi.png/220px-Maroon_5_-_Jordi.png) no-repeat center;
+  background-size:100%;
+  height:10rem;
+  width:10rem;
+  text-align: center;
+  margin:auto;
+
+}
+h1{
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  background: linear-gradient(black, white, orange);
+  border-radius:9px;
+  box-shadow:0 0px 10px 20px orange;
+  position:fixed;
+  margin-top:-10px;
+  width:100%;
+  font-family:tahoma;
+}
+
+body{
+  background:linear-gradient(#edc9af, ghostwhite, rgb(150, 100, 255),#b408b5,#faf0dd, #565051,maroon);
+}
+
